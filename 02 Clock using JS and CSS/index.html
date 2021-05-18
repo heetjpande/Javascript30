@@ -13,6 +13,10 @@
 		</div>
 	</div>
 
+	<div class="floating-text">
+		Part of <a target="_blank" href="https://www.javascript30.com">Javascript30</a>
+	</div>
+
 	<style>
 		html{
 			background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=50);
@@ -64,6 +68,24 @@
 			transition-timing-function: cubic-bezier(.1, 2.7, 0.58, 1);
 		}
 
+		.floating-text {
+			background-color: #001F61;
+			border-radius: 10px 10px 0 0;
+			color: #fff;
+			font-family: 'Muli';
+			padding: 7px 15px;
+			position: fixed;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			text-align: center;
+			z-index: 998;
+		}
+
+		.floating-text a {
+			color: #FF7500;
+			text-decoration: none;
+		}
 	</style>
 
 	<script>
